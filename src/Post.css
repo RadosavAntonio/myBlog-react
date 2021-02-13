@@ -1,0 +1,22 @@
+.post__image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.post__text {
+  font-weight: normal;
+  color: #fafafa;
+}
+
+.post__username {
+  color: #fafafa;
+}
+
+.post {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: rgba(16, 18, 27, 80%);
+  border-radius: 20px;
+  /* backdrop-filter: blur(50px); */
+}
