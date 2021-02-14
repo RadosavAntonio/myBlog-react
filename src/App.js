@@ -9,8 +9,9 @@ function App() {
         <img className="app__headerImage" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Blog"/>
       </div>
 
-      <Post />
-      {/* add component */}
+      <Post username="AntonioR" caption="first user" imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />
+      <Post username="John" caption="second user" imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />
+      <Post username="Francesca" caption="third user" imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />
     </div>
   );
 }

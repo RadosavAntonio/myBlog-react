@@ -3,24 +3,28 @@ import "./Post.css";
 import Avatar from "@material-ui/core/Avatar";
 // import {Button} from "@material-ui/core"
 
-function post() {
+function post({username, caption, imageUrl}) {
   return (
     <div className="post">
-      <Avatar 
-        className="post__avatar"
-        alt='Ghita'
-        src="/static/images.avatar/1.jpg"
-      />
-      <h3 className="post__username">username</h3>
+      <div class="post__header">
+        <Avatar 
+          className="post__avatar"
+          alt={username}
+          src="/static/images.avatar/1.jpg"
+        />
+        <h3 className="post__username">{username}</h3>
+      </div>
       <img
         className="post__image"
-        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+        src={imageUrl}
         alt=""
       />
       <h4 className="post__text">
-        <strong>username: </strong>This is initial comment
+        <strong>{username}: </strong>{caption}
       </h4>
-      {/* <Button size="large" color="secondary" variant="text">hellow</Button> */}
+      {/* <div className="test__button">
+        <Button size="medium" color="secondary" variant="outlined">test button</Button>
+      </div> */}
     </div>
   );
 }

@@ -6,17 +6,30 @@
 .post__text {
   font-weight: normal;
   color: #fafafa;
+  margin-top: 10px;
 }
 
 .post__username {
   color: #fafafa;
+  padding-left: 10px;
 }
+
+.post__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* .test__button {
+  margin: 20px;
+} */
 
 .post {
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
   border: 1px solid black;
   background-color: rgba(16, 18, 27, 80%);
   border-radius: 20px;
-  /* backdrop-filter: blur(50px); */
+  backdrop-filter: blur(5px);
+  /* max-width: 500px; */
 }
