@@ -6,31 +6,34 @@ import { db } from "./firebase";
 
 function App() {
   const [post, setPost] = useState([
-    {
-      username: "AntonioR",
-      caption: "first user",
-      imageUrl:
-        "https://www.searchenginejournal.com/wp-content/uploads/2018/10/How-to-Boost-Your-Images%E2%80%99-Visibility-on-Google-Images-1520x800.png",
-    },
-    {
-      username: "John",
-      caption: "second user",
-      imageUrl:
-        "https://media3.s-nbcnews.com/j/newscms/2019_41/3047866/191010-japan-stalker-mc-1121_06b4c20bbf96a51dc8663f334404a899.fit-760w.JPG",
-    },
-    {
-      username: "Francesca",
-      caption: "third user",
-      imageUrl:
-        "https://www.nhm.ac.uk/content/dam/nhmwww/discover/wpy-56/13.jpg.thumb.768.768.jpg",
-    },
+    // {
+    //   username: "AntonioR",
+    //   caption: "first user",
+    //   imageUrl:
+    //     "https://www.searchenginejournal.com/wp-content/uploads/2018/10/How-to-Boost-Your-Images%E2%80%99-Visibility-on-Google-Images-1520x800.png",
+    // },
+    // {
+    //   username: "John",
+    //   caption: "second user",
+    //   imageUrl:
+    //     "https://media3.s-nbcnews.com/j/newscms/2019_41/3047866/191010-japan-stalker-mc-1121_06b4c20bbf96a51dc8663f334404a899.fit-760w.JPG",
+    // },
+    // {
+    //   username: "Francesca",
+    //   caption: "third user",
+    //   imageUrl:
+    //     "https://www.nhm.ac.uk/content/dam/nhmwww/discover/wpy-56/13.jpg.thumb.768.768.jpg",
+    // },
   ]);
 
   // run a piece of code using a specific condition (useEffect)
   useEffect(() => {
    db.collection('post').onSnapshot(snapshot => {
     //  every time firebase update, update this code
-    setPost(snapshot.docs.map(doc => doc.data()))
+    setPost(snapshot.docs.map(doc => ({
+      id: doc.id,
+      post: doc.data(),
+    })));
    })
   }, []);
   // when post change it runs again ([] means until page refresh)
@@ -45,8 +48,10 @@ function App() {
         />
       </div>
 
-      {post.map((post) => (
+      {/* id is for rendering just the new one */}
+      {post.map(({id, post}) => (
         <Post
+          key={id}
           username={post.username}
           caption={post.caption}
           imageUrl={post.imageUrl}
