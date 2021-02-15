@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import Post from "./Post";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { db } from "./firebase";
 
 function App() {
   const [post, setPost] = useState([
@@ -25,6 +26,15 @@ function App() {
     },
   ]);
 
+  // run a piece of code using a specific condition (useEffect)
+  useEffect(() => {
+   db.collection('post').onSnapshot(snapshot => {
+    //  every time firebase update, update this code
+    setPost(snapshot.docs.map(doc => doc.data()))
+   })
+  }, []);
+  // when post change it runs again ([] means until page refresh)
+
   return (
     <div className="app">
       <div className="app__header">
@@ -35,11 +45,13 @@ function App() {
         />
       </div>
 
-      {
-        post.map(post => (
-          <Post username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
-        ))
-      }
+      {post.map((post) => (
+        <Post
+          username={post.username}
+          caption={post.caption}
+          imageUrl={post.imageUrl}
+        />
+      ))}
     </div>
   );
 }
