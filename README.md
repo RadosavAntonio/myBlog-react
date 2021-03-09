@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# My Blog - plan 
+> [Antonio Radosav - GitHub - My Blog](https://github.com/RadosavAntonio/myBlog-react)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## <span style="color: red"> Pages </span> 
+* Home
+* Dashboard
+<br/><br/>
 
-## Available Scripts
+## <span style="color: red"> Header </span>
+  <span style="color: green"> The header have to be the same for all pages </span>
 
-In the project directory, you can run:
+  Header contain:
+  * background image: 
+    - url(https://www.transparenttextures.com/patterns/cubes.png), linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
+  * Logo
+    - {still have to find a logo}
+    - position right
+    - centred
+    - object-fit: contain
+  * Name of the website
+    - centered after logo
+    -find a color to be seen properly (probably white)
+    <br/><br/>
 
-### `yarn start`
+## <span style="color: red"> General details for any page </span>
+  <span style="color: green"> this elements have to be on Home and Dashboard </span>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  * background image:
+    - url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg)
+    - The image have to be no repetitive
+  * all elements that appear on any page have to be on a transparent backgroud with rounded corners
+    - ackground-color: rgba(16, 18, 27, 80%);
+    border-radius: 20px;
+    - the text on elements have to be white
+  * all elements have to be centered on the webpage and responsive
+  <br/><br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## <span style="color: red"> Home </span>
+  ### This is the page where the website have to open 
+  <span style="color: green"> (if the user was not loged in before or if the user loged out, otherwise open on dashboard) </span>
+  <br></br>
+  <span style="color: green"> User database: have to be made with Firebase with Email and password </span>
+  <span style="color: green"> Sing up option have to catch username, email and password</span>
+  <br></br>
+   <span style="color: green"> OPTIONAL: with google and facebook </span>
+  * Have to have 2 buttons (Login and Sing up)
+  * Login button have to have color primary from Material-ui
+  * Sing up button have to have color secondary from Material-ui
+  * min width of 50px
+  * box container have to have minimul 200 height with 200 width
+  * buttons have to be centred
+  <br/><br/>
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## <span style="color: red"> Dashboard </span>
+  Dashboard is the place where the posts will appear. The new posts have to be on the top.
+  ### <span style="color: red"> Post </span>
+  A post have to contain
+  * on left side of the seader have to be LogOut button
+  * user image and username on the top (the user image have to be a circle, if no image put the first character from the username)
+  * photo
+  * caption (made fron username ":" and the username comment)
+  * comments (username ":" and the comment)
+  * imput field for being able to add comments and a submit button
+    
+## <span style="color: red"> Footer </span>
+  * name of the one who created the website
