@@ -40,7 +40,7 @@
   <span style="color: green"> (if the user was not loged in before or if the user loged out, otherwise open on dashboard) </span>
   <br></br>
   <span style="color: green"> User database: have to be made with Firebase with Email and password </span>
-  <span style="color: green"> Sing up option have to catch username, email and password</span>
+  <span style="color: green"> Sing up option have to catch username, email (check if email) and password (min 8 characters)</span>
   <br></br>
    <span style="color: green"> OPTIONAL: with google and facebook </span>
   * Have to have 2 buttons (Login and Sing up)
@@ -61,6 +61,7 @@
   * caption (made fron username ":" and the username comment)
   * comments (username ":" and the comment)
   * imput field for being able to add comments and a submit button
+  * imput field for new posts vith sibmit button and attach file button
     
 ## <span style="color: red"> Footer </span>
   * name of the one who created the website
