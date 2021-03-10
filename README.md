@@ -55,6 +55,7 @@
   Dashboard is the place where the posts will appear. The new posts have to be on the top.
   ### <span style="color: red"> Post </span>
   A post have to contain
+  * <span style="color: green">  Newer posts have to be on the top </span>
   * on left side of the seader have to be LogOut button
   * user image and username on the top (the user image have to be a circle, if no image put the first character from the username)
   * photo
