@@ -65,4 +65,4 @@
   * imput field for new posts vith sibmit button and attach file button
     
 ## <span style="color: red"> Footer </span>
-  * name of the one who created the website
+  * name of the one who created the website()
