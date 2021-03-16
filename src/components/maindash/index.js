@@ -1,0 +1,1 @@
+export { Maindash } from './maindash.component'
