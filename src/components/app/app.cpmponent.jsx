@@ -13,6 +13,7 @@ export const App = () => {
       </AS.FixHeader>
       <AS.ContentContainer>
         <Maindash />
+        test
       </AS.ContentContainer>
       <AS.FixFooter>
         <Footer />
