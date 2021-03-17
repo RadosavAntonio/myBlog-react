@@ -1,6 +1,6 @@
-import style from 'styled-components'
+import styled from 'styled-components'
 
-export const Background = style.div`
+export const Background = styled.div`
   background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png), linear-gradient( #FFADAD, #BDB2FF);
   padding: 5px;
   min-height: calc(100vh - 80px);

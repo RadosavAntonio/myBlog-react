@@ -1,11 +1,10 @@
 import React from 'react'
 import * as PS from './paper.style'
 
-export const Paper = ({width, onClick}) => {
+export const Paper = ({children, width}) => {
   return (
-    <PS.PaperWrapper width={width} onClick={onClick}>
-      <div>test</div>
-      <div>2334</div>
+    <PS.PaperWrapper width={width}>
+      {children}
     </PS.PaperWrapper>
   )
 }
