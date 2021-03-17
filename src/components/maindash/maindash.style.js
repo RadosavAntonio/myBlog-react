@@ -11,13 +11,3 @@ export const Background = style.div`
   color: #fff;
   font-family: Comic Sans MS, Textile, Cursive;
 `
-
-export const Post = style.div`
-  padding: 10px;
-  margin: 20px;
-  // border: 1px solid black;
-  background-color: rgba(16, 18, 27, 60%);
-  border-radius: 20px;
-  backdrop-filter: blur(5px);
-  max-width: 500px;
-`
