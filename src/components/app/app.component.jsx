@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import * as AS from './app.style'
 import { Header } from '../header/header.component'
 import { Footer } from '../footer/footer.component'
@@ -6,6 +6,11 @@ import { Maindash } from '../maindash'
 
 
 export const App = () => {
+
+  // useEffect(() => {
+
+  // }, [input])
+
   return (
     <AS.PageContainer>
       <AS.FixHeader>
