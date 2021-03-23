@@ -8,7 +8,6 @@ export const Background = style.div`
   flex-direction: row;
   align-items: center;
   color: #fff;
-  font-family: Comic Sans MS, Textile, Cursive;
 `
 
 export const Logo = style.img`
