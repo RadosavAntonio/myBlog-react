@@ -5,8 +5,6 @@ export const Background = style.div`
   height: 20px;
   padding: 5px;
   color: #fff;
-  font-family: Comic Sans MS, Textile, Cursive;
-  
 `
 
 export const Text = style.p`
